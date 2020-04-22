@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UpdateAlertView" customModule="UnityCar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="629"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-hx-oTf">
+                    <rect key="frame" x="60" y="58" width="387" height="513"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_update_background" translatesAutoresizingMaskIntoConstraints="NO" id="S12-WH-lQW">
+                            <rect key="frame" x="0.0" y="0.0" width="387" height="513"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现新版本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkq-u5-oYC">
+                            <rect key="frame" x="132.5" y="27" width="122" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新版本V1.1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgx-18-zoL">
+                            <rect key="frame" x="20" y="100" width="94.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-0Z-Eqp">
+                            <rect key="frame" x="20" y="137" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEO-ID-idX">
+                            <rect key="frame" x="20" y="174" width="94.5" height="50.5"/>
+                            <string key="text">1.修复已知bug
+2.修复已知bug
+3.修复已知bug</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-hi-57O">
+                            <rect key="frame" x="40" y="446" width="307" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6fs-CQ-A8B"/>
+                            </constraints>
+                            <state key="normal" title="立即更新">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="u0f-0Z-Eqp" firstAttribute="top" secondItem="fgx-18-zoL" secondAttribute="bottom" constant="20" id="L4y-dS-QF6"/>
+                        <constraint firstItem="Jkq-u5-oYC" firstAttribute="top" secondItem="iUB-hx-oTf" secondAttribute="top" constant="27" id="RCf-fQ-9OX"/>
+                        <constraint firstItem="fgx-18-zoL" firstAttribute="leading" secondItem="iUB-hx-oTf" secondAttribute="leading" constant="20" id="RiO-3P-E4y"/>
+                        <constraint firstAttribute="trailing" secondItem="XTy-hi-57O" secondAttribute="trailing" constant="40" id="Rxs-7W-DA2"/>
+                        <constraint firstAttribute="bottom" secondItem="XTy-hi-57O" secondAttribute="bottom" constant="27" id="YJH-fz-jhi"/>
+                        <constraint firstItem="WEO-ID-idX" firstAttribute="leading" secondItem="iUB-hx-oTf" secondAttribute="leading" constant="20" id="ZBm-PY-DM5"/>
+                        <constraint firstItem="S12-WH-lQW" firstAttribute="leading" secondItem="iUB-hx-oTf" secondAttribute="leading" id="ZHA-cq-Mqw"/>
+                        <constraint firstAttribute="trailing" secondItem="S12-WH-lQW" secondAttribute="trailing" id="bON-3t-m8k"/>
+                        <constraint firstAttribute="bottom" secondItem="S12-WH-lQW" secondAttribute="bottom" id="e8m-04-O8f"/>
+                        <constraint firstAttribute="width" secondItem="iUB-hx-oTf" secondAttribute="height" multiplier="239:317" id="fnc-Pi-1rI"/>
+                        <constraint firstItem="Jkq-u5-oYC" firstAttribute="centerX" secondItem="iUB-hx-oTf" secondAttribute="centerX" id="k6A-sR-HB8"/>
+                        <constraint firstItem="S12-WH-lQW" firstAttribute="top" secondItem="iUB-hx-oTf" secondAttribute="top" id="oQC-Hn-SdY"/>
+                        <constraint firstItem="XTy-hi-57O" firstAttribute="leading" secondItem="iUB-hx-oTf" secondAttribute="leading" constant="40" id="oXB-fl-Zrf"/>
+                        <constraint firstItem="u0f-0Z-Eqp" firstAttribute="leading" secondItem="iUB-hx-oTf" secondAttribute="leading" constant="20" id="osN-Ae-tdP"/>
+                        <constraint firstItem="WEO-ID-idX" firstAttribute="top" secondItem="u0f-0Z-Eqp" secondAttribute="bottom" constant="20" id="peM-pG-wpN"/>
+                        <constraint firstItem="fgx-18-zoL" firstAttribute="top" secondItem="Jkq-u5-oYC" secondAttribute="bottom" constant="44" id="zgN-ay-7I5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iUB-hx-oTf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="3aa-IO-D7h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iUB-hx-oTf" secondAttribute="trailing" constant="60" id="7vc-l5-lHR"/>
+                <constraint firstItem="iUB-hx-oTf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="t3y-qv-GDc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-83.333333333333343" y="-330.46875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_update_background" width="240" height="318"/>
+    </resources>
+</document>
